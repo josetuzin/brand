@@ -11,6 +11,7 @@
   --normal: 12px;
   /* espaciado */
   --space: 10px;
+  --space-2:20px;
   /* box shadow */
   --box: 0 0 5px #e6e5e9;
 }
@@ -62,16 +63,20 @@ nav li a:hover {
 .products {
   display: flex;
   background-image: url("../images/curve.png");
-  max-height: 50px; /* para que aparezca la imagen */
+  height: 90px; /* para que aparezca la imagen */
   background-size: cover;
   background-position: center top;
-  padding: 20%;
-
+  background-repeat: no-repeat;
+  padding: 15%;
 }
 
 .product {
-  padding: var(--space);
-  margin-top: -240px;
+  padding: var(--space-2);
+  margin-top: -250px;
+}
+
+.product:hover {
+  margin-top: -260px;
 }
 
 .product .content {
@@ -97,4 +102,74 @@ nav li a:hover {
 
 .main_button:hover {
   background-color: #5e9e22;
+}
+
+/* beneficios */
+
+.beneficios {
+  padding: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.beneficio {
+  text-align: center;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.beneficio img{
+  max-height: 100px
+}
+
+.text_beneficio{
+  text-align: justify;
+}
+
+
+/* menciones */
+
+h2.mention_title {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.mentions {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  display: flex;
+}
+
+.mention {
+  padding: var(--space);
+}
+
+.mention img{
+  width: 100%;
+}
+
+.content_mention{
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text{
+  padding: var(--space);
+}
+
+/* footer */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
+
+footer a {
+  text-decoration: none;
+  padding: var(--space);
+  color: var(--white-color);
 }
